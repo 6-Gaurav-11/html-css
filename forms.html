@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title> <!--tab title-->
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+
+        <form>
+            <label for="name">Name : </label>
+            <input type="text" name="Username" id="name" required> <!--id is unique-->
+            <br><br>
+
+            <label for="mail">Email : </label>
+            <input type="email" name="EmailId" id="mail" required>  <!--name is used for js or java codes-->
+            <br><br>
+
+            <label for="pass">Password : </label>
+            <input type="password" name="UserPassword" id="pass" required>
+            <br><br>
+
+            <!--RADIO BUTTONS-->
+            <p>Select something : </p>
+                <input type="radio" name="brand" value="Lamborghini"  id="Lamborghini">
+                <label for="Lamborghini">Lamborghini</label>
+                <br>      
+
+                <input type="radio" name="brand" value="Audi" id="Audi">
+                <label for="Audi">Audi</label>
+                <br>
+
+                <input type="radio" name="brand" value="Mclaren" id="Mclaren">
+                <label for="Mclaren">Mclaren</label>
+                <br><br>
+
+            <!--DROPDOWN MENU-->
+            <label for="question">Security Question : </label>
+            <select name="Question" id="question">
+                <option value="q1">What ?</option>
+                <option value="q2">How ?</option>
+                <option value="q3">When ?</option>
+                <option value="q4">Where ?</option>
+            </select>
+            <br>
+
+            <label for="answer">Security Question Answer : </label>
+            <input type="text" id="answer" name="Answer">
+            <br><br>
+
+            <lable for="bio">Your Bio : </lable> <br>
+            <textarea name="Bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+            <br><br>
+
+            <!--CHECKBOX-->
+            <p>Select your vehicles</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">Bike</label><br>
+
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">Car</label><br>
+            
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">Aeroplane</label><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
